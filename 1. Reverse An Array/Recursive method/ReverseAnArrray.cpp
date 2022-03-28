@@ -9,14 +9,27 @@ void printArray(int arr[0], int size ){
     cout << endl;
 }
 
-void reverseArray(int arr[], int start, int end){
+// void reverseArray(int arr[], int start, int end){
+//     if(start>=end){
+//         return;
+//     }
+//     int temp = arr[start];
+//     arr[start] = arr[end];
+//     arr[end] = temp;
+//     reverseArray( arr, start + 1,  end -1);
+// }
+
+void reverseArray (int arr[], int start, int end)
+{
     if(start>=end){
-        return;
+        return ;
     }
-    int temp = arr[start];
-    arr[start] = arr[end];
-    arr[end] = temp;
-    reverseArray( arr, start + 1,  end -1);
+  
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        reverseArray(arr, start+1,end-1);
+    
 }
 
 int main (){
