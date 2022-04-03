@@ -156,7 +156,7 @@ struct Pair
     int min;
 };
 
-Pair getMinMax(int arr[0], int low, int high)
+Pair getMinMax(int arr[], int low, int high)
 {
     int mid;
     struct Pair minmax, mml, mmr;
